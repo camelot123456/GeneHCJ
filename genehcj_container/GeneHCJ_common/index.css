@@ -1,0 +1,244 @@
+.box-1 {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+}
+
+.box-2 {
+    width: 30%;
+}
+
+#wrapper {
+    background-color: rgb(235, 193, 142);
+    height: 500px;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; */
+}
+
+.box-element {
+    width: 200px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 1px solid #f00;
+}
+
+.box-hover {
+    box-shadow: 0 5px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19);
+}
+/* 
+.active_custom {
+    border: 2px solid #f00;
+} */
+
+.scroll-bar {
+    overflow: auto;
+    height: 100vh;
+}
+
+.box-3 {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+
+.draggable {
+    cursor: move;
+    position: absolute;
+}
+
+
+
+/* Object active */
+.drop {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 145, 255);
+    text-align: center;
+    line-height: 50px;
+}   
+
+#box {
+    background-color: aqua;
+    position: relative;
+    text-align: center;
+    line-height: 70px;
+}   
+
+.object-active {
+    cursor: pointer;
+    box-shadow: rgb(255, 0, 0) 0px 0px 0px 1px;
+}
+
+.object-active:active {
+    cursor: move;
+    /* Disabled select text */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+.object-action {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px dashed #f00;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* scale x */
+.object-scale-tl {
+    top: -5px;
+    left: -5px;
+    cursor: nwse-resize;
+}
+
+.object-scale-br {
+    bottom: -5px;
+    right: -5px;
+    cursor: nwse-resize;
+}
+
+.object-scale-tr {
+    top: -5px;
+    right: -5px;
+    cursor: nesw-resize;
+}
+
+.object-scale-bl {
+    bottom: -5px;
+    left: -5px;
+    cursor: nesw-resize;
+}
+
+/* rezice + */
+.object-resize-t {
+    top: -5px;
+    left: calc(50% - 5px);
+    cursor: n-resize;
+}
+
+.object-resize-l {
+    bottom: calc(50% - 5px);
+    left: -5px;
+    cursor: e-resize;
+}
+
+.object-resize-b {
+    bottom: -5px;
+    right: calc(50% - 5px);
+    cursor: n-resize;
+}
+
+.object-resize-r {
+    bottom: calc(50% - 5px);
+    right: -5px;
+    cursor: e-resize;
+}
+
+/* rotate */
+
+.object-rotate-t {
+    width: 0px;
+    height: 40px;
+    right: calc(50% - 1px);
+    top: -40px;
+    z-index: 999;
+}
+
+.object-rotate-point-t {
+    width: 10px;
+    height: 10px;
+    right: calc(50% - 5px);
+    top: -50px;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: grab;
+}
+
+.object-rotate-point-t:active {
+    cursor: grabbing;
+}
+
+.object-rotate-b {
+    width: 0px;
+    height: 40px;
+    right: calc(50% - 1px);
+    bottom: -40px;
+    z-index: 999;
+}
+
+.object-rotate-point-b {
+    width: 10px;
+    height: 10px;
+    right: calc(50% - 5px);
+    bottom: -50px;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: grab;
+}
+
+.object-rotate-point-b:active {
+    cursor: grabbing;
+}
+
+.object-rotate-l {
+    width: 40px;
+    height: 0px;
+    top: calc(50% - 1px);
+    left: -40px;
+    z-index: 999;
+}
+
+.object-rotate-point-l {
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: -50px;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: grab;
+}
+
+.object-rotate-point-l:active {
+    cursor: grabbing;
+}
+
+.object-rotate-r {
+    width: 40px;
+    height: 0px;
+    top: calc(50% - 1px);
+    right: -40px;
+    cursor: default;
+    z-index: 999;
+}
+
+.object-rotate-point-r {
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    right: -50px;
+    border-radius: 50%;
+    background-color: #f00;
+    cursor: grab;
+}
+
+.object-rotate-point-r:active {
+    cursor: grabbing;
+}

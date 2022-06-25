@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="hstack box-container">
+		<div class="vstack bg-secondary box-2 scroll-bar" id="box-tool">
+			<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Containers
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<ul class="list-group">
+								<li class="list-group-item list-group-flush" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-VBox">
+									Ancordion</li>
+								<li class="list-group-item list-group-flush" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-VBox">
+									AnchorPane</li>
+								<li class="list-group-item list-group-flush" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-VBox">
+									LayoutPage</li>
+								<li class="list-group-item list-group-flush" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-VBox">
+									FlowPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-HBox">GridPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-Container">HStack</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-Container">Pane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-Grid">ScrollPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-Container">SplitPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-Grid">StackPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">Tab</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">TabPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">TextFlow</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">TilePane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">TitledPane</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">ToolBar</li>
+								<li class="list-group-item" ondragover="handleDragOver(event)"
+									ondrop="handleDrop(event)" ondragstart="handleDragStart(event)" draggable="true"
+									id="container-List">VStack</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Controls
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<ul class="list-group">
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="button">
+									Button</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="checkbox">
+									Checkbox</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="select">
+									Select</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="color-picker">
+									ColorPicker</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="combo-box">
+									ComboBox</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="date-picker">
+									DatePicker</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="hyper-link">
+									HyperLink</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="image">Image
+								</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="label">Label
+								</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									ListView</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									MediaView</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									MenuBar</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									MenuButton</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									Pagination</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									PasswordField</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									ProgressBar</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									ProgressIndicator</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									RadioButton</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									ScrollBar</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									Separator</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									Slider</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									SplitMenuButton</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TableView</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TableColumn</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TextArea</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TextField</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									ToggleButton</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TreeTableView</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TreeTableColumn</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">
+									TreeView</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Bootstrap
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+						data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<ul class="list-group">
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-1">
+									Select</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-2">Form
+									control</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-3">Text
+									area</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-4">Text
+									form</li>
+								<li class="list-group-item" ondragstart="handleDragStart(event)" draggable="true"
+									id="bootstrap-5">File
+									Form</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr />
+		</div>
+		<div style="width: 100%; height: 100%">
+			<button id="export-html" onclick="handleCLickExportHtml()">Export html</button>
+			<div id="wrapper" ondrop="handleDrop(event)" ondragover="handleDragOver(event)"
+				ondragleave="handleDragLeave(event)">
+				<div class="drop draggable" id="box1">box-1</div>
+				<div class="drop draggable" id="box2">box-2</div>
+				<div class="draggable"  id="box3">
+					<div style="height: 100%; overflow: hidden ;background-color: aliceblue; padding: 4px; border: 1px solid rgb(121, 121, 224); border-radius: 4px">
+						<h3 style="width: 100%; text-align: center">Login</h3>
+						<div style="margin-top: 8px;" >
+							<label for="u">Username</label><br>
+							<input id="u" style="width: 100%" type="text" placeholder="Username"/>
+						</div>
+						<div style="margin-top: 8px;" >
+							<label for="p">Password</label><br>
+							<input id="p" style="width: 100%" type="password" placeholder="Password"/>
+						</div>
+						<button style="margin-top: 8px;"  id="btn-login">Login</button>
+					</div>
+				</div>
+				<select class="draggable" id="box-4">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+				<!-- <select class="draggable" id="box">
+					<div class="object-active">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<div class="object-action object-scale-tl"></div>
+						<div class="object-action object-scale-tr"></div>
+						<div class="object-action object-scale-bl"></div>
+						<div class="object-action object-scale-br"></div>
+						<div class="object-action object-resize-t"></div>
+						<div class="object-action object-resize-l"></div>
+						<div class="object-action object-resize-b"></div>
+						<div class="object-action object-resize-r"></div>
+						<div class="object-action object-rotate-t"></div>
+						<div class="object-action object-rotate-b"></div>
+						<div class="object-action object-rotate-l"></div>
+						<div class="object-action object-rotate-r"></div>
+						<div class="object-action object-rotate-point-t"></div>
+						<div class="object-action object-rotate-point-b"></div>
+						<div class="object-action object-rotate-point-l"></div>
+						<div class="object-action object-rotate-point-r"></div>
+					</div>
+				</select> -->
+			</div>
+			<code id="show-source"></code>
+		</div>
+		<div class="vstack bg-secondary box-2 p-3 scroll-bar" id="box-tool">
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+					  Properties
+					</button>
+				  </h2>
+				  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<table>
+						<h4>Properies</h4>
+						<tr>
+							<th>id</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>name</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>color</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>name</th>
+							<td>321</td>
+						</tr>
+					</table>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+					  Layout
+					</button>
+				  </h2>
+				  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<table>
+						<h4>Properies</h4>
+						<tr>
+							<th>id</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>name</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>color</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>name</th>
+							<td>321</td>
+						</tr>
+					</table>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+					  Event
+					</button>
+				  </h2>
+				  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<table>
+						<h4>Properies</h4>
+						<tr>
+							<th>id</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>name</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>color</th>
+							<td>321</td>
+						</tr>
+						<tr>
+							<th>name</th>
+							<td>321</td>
+						</tr>
+					</table>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="data.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>
