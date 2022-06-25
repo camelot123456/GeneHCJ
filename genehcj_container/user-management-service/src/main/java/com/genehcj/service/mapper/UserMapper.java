@@ -2,9 +2,12 @@ package com.genehcj.service.mapper;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.genehcj.entity.User;
 import com.genehcj.service.dto.UserDTO;
 
+@Component
 public class UserMapper implements EntityMapper<UserDTO, User>{
 
 	@Override
@@ -16,7 +19,7 @@ public class UserMapper implements EntityMapper<UserDTO, User>{
 				.authProvider(dto.getAuthProvider())
 				.birthday(dto.getBirthday())
 				.email(dto.getEmail())
-				.fisrtName(dto.getFisrtName())
+				.firstName(dto.getFirstName())
 				.gender(dto.getGender())
 				.id(dto.getId())
 				.imageUrl(dto.getImageUrl())
@@ -36,7 +39,7 @@ public class UserMapper implements EntityMapper<UserDTO, User>{
 				.authProvider(entity.getAuthProvider())
 				.birthday(entity.getBirthday())
 				.email(entity.getEmail())
-				.fisrtName(entity.getFisrtName())
+				.firstName(entity.getFirstName())
 				.gender(entity.getGender())
 				.id(entity.getId())
 				.imageUrl(entity.getImageUrl())
