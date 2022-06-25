@@ -1,5 +1,0 @@
-package com.genehcj.entity;
-
-public abstract class AbstractAuditingEntity {
-
-}
