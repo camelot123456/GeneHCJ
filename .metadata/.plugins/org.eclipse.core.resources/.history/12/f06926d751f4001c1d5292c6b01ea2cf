@@ -1,0 +1,5 @@
+package com.genehcj.service.mapper;
+
+public class UserMapper {
+
+}

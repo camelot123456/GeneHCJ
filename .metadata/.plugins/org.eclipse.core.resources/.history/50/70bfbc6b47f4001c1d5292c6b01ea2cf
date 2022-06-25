@@ -1,0 +1,5 @@
+package com.genehcj.service;
+
+public class UserServiceImpl {
+
+}

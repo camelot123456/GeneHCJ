@@ -1,0 +1,5 @@
+package com.genehcj.entity.enums;
+
+public enum AuthProvider {
+
+}

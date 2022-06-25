@@ -1,0 +1,5 @@
+package com.genehcj.repository;
+
+public class UserRepository {
+
+}

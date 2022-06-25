@@ -1,0 +1,7 @@
+package com.genehcj.entity.enums;
+
+public enum AuthProvider {
+
+	LOCAL, OAUTH2, FACEBOOK, GOOGLE, GITHUB, DROPBOX, MICROSOFT
+	
+}

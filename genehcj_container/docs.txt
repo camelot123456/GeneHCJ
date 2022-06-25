@@ -1,0 +1,47 @@
+1 It is assumed that you have a backend folder and a client folder. Go to the client folder and open the package.json file. In the package .json file of the folder, open and add the proxy whose value will point to the url to your backend server. Under thescript tag add the proxy. for example:
+
+"scripts": {
+
+"start": "react-scripts start",
+
+"build": "react-scripts build",
+
+"test": "react-scripts test --env=jsdom",
+
+"eject": "react-scripts eject"
+
+},
+
+"proxy": "http://localhost:5000"
+
+2 Goto your root folder. That is get out of your client folder. Then at your command prompt/gitbash prompt install concurrently as follows:
+
+npm install concurrently
+
+npm install nodemon
+
+Note: this will allow you to run both client and server on the same machine.
+
+3 Goto the package.json in your server folder. Add the following script to your scripts tag:
+
+"client-install": "npm install --prefix client",
+
+"start": "node server.js",
+
+"server": "nodemon server.js",
+
+"client": "npm start --prefix client",
+
+"dev": "concurrently \"npm run server\" \"npm run client\""
+
+This assumes that your server is named server.js. Please note that
+
+"dev": "concurrently \"npm run server\" \"npm run client\""
+
+will run both client and server.
+
+4. Goto your command/gitbash prompt and type :
+
+npm run dev
+
+I hope this will help
