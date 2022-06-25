@@ -1,5 +1,6 @@
 HELP.md
 target/
+Servers/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -13,7 +14,6 @@ target/
 .springBeans
 .sts4-cache
 .metadata
-.Servers/
 
 ### IntelliJ IDEA ###
 .idea
